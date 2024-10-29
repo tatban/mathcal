@@ -12,3 +12,4 @@ This web api helps to perform mathematical calculation when the inputs are in st
 - Then try `http://localhost:38080/mathcal/{your_question}` where `your_question` for example could be `what is 2 times 5?`
 - If everything is set up correctly, a dict (json) response is sent with two keys: `question` and `result`
 - For more API reference see the Swagger docs at `http://localhost:38080/docs`
+- Internally the LLM interprets the mathematical expression and converts it into a small python code and gets the result by evaluating that expression.
